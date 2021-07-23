@@ -1,0 +1,266 @@
+
+@media screen and (max-width:1280px) {
+    /* 1.gnb 마진, 글자 간격 
+	2.cs 이미지 사이즈
+	3.이미지 줄어드는거 따라서 블로그 유투브 사이즈+화살표사이즈+글자사이즈,정렬
+	4.메인 구매하러 가기 div
+	5.로그인 글씨크기*/
+	/* 1 */
+	#headerGnb ul.depth_1{width:600px;}
+	#headerGnb ul.depth_1>li{width:100px;padding-right:0;text-align:center}
+	#headerGnb ul.depth_1>li>a{font-size:1em;display:inline-block}
+	#gnb_bg .depth_2{width:600px}
+	#gnb_bg ul li a{font-size:.875em;letter-spacing:-1px;padding:5px 0}
+	#gnb_bg ul li ul{padding:5px 0 0 10px;}
+	#gnb_bg ul li ul li{margin-bottom:0;font-size:1em;}
+	#gnb_bg ul li ul li a{padding:3px 0}
+	#login ul{width:150px;margin:0 auto;float:none}
+	#login ul li a{font-size:.75em}
+
+	.bSlide02 .best05 div p{font-size:1.5em;font-weight:800;margin-top:-80px;}
+	.bSlide02 .best05 div{width:98%;margin:20px 1% 0;}
+	.bSlide02 .best05 div a{transform:scale(.7);margin-top:-47px;right:-20px}
+	.bSlide02 .best05 div a.lottemart{right:-20px}
+	.bSlide02 .best05 div p{margin-top:-60px}
+	.bSlide02 .best05 div p span{font-size:1.125em;}
+	
+	#sns div{font-size:3em;}
+	#sns div a{padding:51px 80px 50px 40px}
+	#sns div a span{transform:scale(.8);right:20px}
+	
+	#cs>div{padding:22px 20px}
+	#cs>div>div{margin-bottom:6px}
+	#cs>div>.csText p{padding-top:20px;font-size:1em;padding-right:10px}
+	#cs>div>.csImg a{width:150px;height:150px}
+	#cs>div>ul{padding:30px 10px 0}
+	#cs>div>ul>li{line-height:1.4}
+	
+	#footer_wrap img{width:200px;margin-top:30px}
+}
+
+@media screen and (max-width:1024px) {
+    /* 1.gnb -> 햄버거,로고 작게, 헤더영역 작게
+	2.width 100%
+	3.메인 버튼 하단부로 이동
+	4.새로나왔어요 슬라이드버튼 위치
+	5.청우뉴스 레이아웃
+	6.cs레이아웃
+	*/
+	header{display:block;width:100%;padding:0 2%;box-sizing:border-box;height:95px;border-bottom:2px solid #f4181a}
+	header h1 img{width:110px}
+	#topBanner #topLogo img{width:110px}
+	#gnb_bg{display:none}
+	#subMenu{display:none}
+	#shortGnb{display:block;float:right;width:30px;margin-top:20px}
+	#shortGnb .eng{font-size:.875em;color:#aaa;text-align:center;letter-spacing:1px}
+	#shortGnb>.gnbBtn{margin-top:15px;cursor:pointer;height:30px}
+	#shortGnb>.gnbBtn>div{width:30px;height:3px;background:#f4181a;margin-bottom:5px;border-radius:3px;transition:all .3s}
+	#shortGnb>.gnbBtn.on .line1{transform:rotate(45deg);margin-top:20px}
+	#shortGnb>.gnbBtn.on .line2{opacity:0;}
+	#shortGnb>.gnbBtn.on .line3{transform:rotate(-45deg);margin-top:-15px}
+	#headerGnb{display:none}
+	#mobileGnb{display:block;background:#f4181a;position:absolute;top:0;left:auto;right:-300px;height:100vh;width:300px;margin-top:95px;z-index:999}
+	#mobileGnb ul.m_depth_1{width:95%;margin:30px auto}
+	#mobileGnb ul.m_depth_1>li{float:none;width:100%;border-bottom: 1px solid rgba(255,255,255,0.3);text-align:left;padding:0 30px;box-sizing:border-box;color:#fff;cursor:pointer}
+	#mobileGnb ul.m_depth_1>li>span{display:block;width:23px;height:23px;background:url(../img/icon_drop.png) no-repeat 3px center;float:right;margin-top:20px;border-radius:50%;transition:all .3s}
+	#mobileGnb ul.m_depth_1>li>a{display:inline-block;padding:20px 0;font-size:1.125em;font-weight:bold}
+	#mobileGnb ul.m_depth_1 ul{display:none;width:310px;background:rgba(255,255,255,.9);margin-left:-38px;padding:20px 40px}
+	#mobileGnb ul.m_depth_1 ul li a{display:block;padding:5px 0;width:100%;color:#777}
+	#mobileGnb ul.m_depth_1 ul li a:hover{text-decoration:underline;color:#333}
+	#mobileGnb ul.m_depth_1 ul li ul{padding:5px 50px}
+	#mobileGnb .m_login{width:155px;margin:150px auto 0}
+	#mobileGnb .m_login a{color:#fff;display:inline-block;float:left}
+	#mobileGnb .m_login a:first-child{margin-left:15px}
+	#mobileGnb .m_login a:hover{text-decoration:underline}
+	#mobileGnb .m_login span{height:14px;width:1px;background:#fff;display:inline-block;float:left;margin:3px 15px 0}
+	
+	
+	section#mainTop{margin-top:0}
+	section#link_cs{margin-top:90px}
+	section{width:95%;margin-top:120px}
+
+	#bestSlide{width:100%}
+	.bSlide01 .best04{display:none}
+	.bSlide02 .best05{display:none}
+	.bSlide01{width:100%;display:grid;
+	grid-template-areas:
+	'best01 best01 best02'
+	'best01 best01 best03';
+	grid-column-gap: 11px;
+	grid-row-gap: 12px;
+	left:0;
+	}
+	.bSlide02{width:100%;display:grid;
+		grid-template-areas:
+		'best06 best08 best08'
+		'best07 best08 best08';
+		grid-column-gap: 11px;
+		grid-row-gap: 12px;
+		left:100%;
+	}
+	.bSlide03 .best09 ul.nongro{position:relative;top:3%;height:85%}
+	.bSlide03 .best09 ul.nongro li{position:absolute;width:35%;margin-right:0;float:none}
+	.bSlide03 .best09 ul.nongro li:last-child{width:35%;}
+	.bSlide03 .best09 ul.nongro li.nongro_product1{top:0;left:0}
+	.bSlide03 .best09 ul.nongro li.nongro_product2{top:30%;left:50%;margin-left:-19%}
+	.bSlide03 .best09 ul.nongro li.nongro_product3{top:0;right:0}
+	.bSlide03 .best09 .nongro_info div{font-size:1em}
+	.bSlide03 .best09>img{bottom:15%;right:5%}
+		
+	#controlBest{max-width:400px;width:150px;border:0;background:#fff;padding:0;position:static;margin:20px auto 0}
+	#controlBest>div{float:left;margin:0;margin-left:15px}
+	#controlBest>div.prevBest{margin:0}
+	#controlBest ul li{float:left;margin:0;margin-left:15px}
+	#controlBest ul li a{display:block;width:18px;height:18px;background:url(../img/icon_btn.png) no-repeat -17px 0;text-indent:-9999px}
+	#controlBest ul li.on a{background-position:0 0}
+	
+	#newSlide>div{position:absolute;top:-60px;width:50px;height:50px;margin-top:0;transform:scale(.8)}
+	#newSlide>div>a{width:30px;height:30px;background-position:-29.5px 0;background-size:cover}
+	#newSlide>div.prevNew{left:auto;right:42px}
+	#newSlide>div.nextNew{right:-4px}
+	#newSlide dl dd{font-size:1em;}
+	
+	
+	section#cw_news{margin-top:120px}
+	#cw_news>div{width:95%;}
+	#cw_news>div>ul{clear:both;display: grid;grid-template-columns:repeat(2,1fr);grid-gap: 10px;margin:55px 0 50px}
+	#cw_news>div>ul>li{background:#fff;padding:20px;border:2px solid #f4181a}
+	#cw_news>div>ul>li.recruit>div{margin-top:10px}
+	#cw_news>div>ul>li.recruit>div>a{width:50%;margin:0 auto}
+	
+	section#link_cs{display:block;width:60%;min-width:500px;}
+	section#link_cs h3{margin-bottom:25px}
+	#sns>div{width:100%;clear:both}
+	#sns>div#blog{margin-top:0}
+	#sns>div#youtube{margin-top:10px}
+	#footer_wrap img{display:none;}
+	#cs{margin-top:90px}
+	#cs>div{clear:both;margin-top:50px;padding:42px 20px 22px}
+	#cs>div>a{transform:scale(1);margin-left:35px}
+	#cs>div>p{margin:10px 45px 0 0}
+	#cs>div>ul{padding:50px 10px 0;width:100%;box-sizing:border-box;}
+	#cs>div>ul>li{width:49%;margin-right:2%}
+	#cs>div>ul>li:nth-child(2){margin-right:0}
+	#cs>div>ul>li:nth-child(4){margin-right:0}
+	footer{margin-top:150px;padding-bottom:20px}
+	#footer_wrap{text-align:center;font-size:.875em}
+	#footer_wrap>div{float:none;margin:0 auto;}
+	#footer_wrap .footer_list{width:370px;margin:0 auto 30px}
+}
+@media screen and (max-width:768px) {
+    /* 1.농로 info글씨 줄이기
+		2.새로나왔어요 글씨 줄이기
+		3.청우식품소식 줄이기
+		4.전체 섹션 width줄이기(여백이 너무 없음)
+	*/
+	.bSlide01{grid-column-gap: 8px;grid-row-gap:8px;}
+	.bSlide02{grid-column-gap: 8px;grid-row-gap:8px;}
+	.bSlide03 .best09 .nongro_info div{font-size:.875em;}
+	section, section#cw_news>div, section#link_cs{width:85%;min-width:auto}
+	section a.more{width:23px;height:23px}
+	section a.more img{width:23px;height:23px}
+	h3{font-size:1.5em}
+	#topBanner #slogan>div{grid-template-columns:1fr 140px}
+	#topBanner #slogan{font-size:3em}
+	#topBanner #slogan > div > span.sloganLine{margin-top:55px}
+	#controlBest>div,#controlBest>ul>li{transform:scale(0.8)}
+	#newSlide dl dd{font-size:.75em;background-size:4%;background-position:2px 9px;padding-left:15px;padding-top:5px;width:100%;box-sizing:border-box}
+	#cw_news>div>ul{display:block;width:100%}
+	#cw_news>div>ul>li{float:none;margin-bottom:10px;width:100%;box-sizing:border-box}
+	#cw_news>div>ul>li>a{font-size:1em;display:grid;grid-template-columns:1fr 90px;}
+	#cw_news>div>ul>li>a>span{float:right;line-height:.7;text-align:right}
+	#cw_news>div>ul>li>div{display:none;}
+	#cw_news>div>ul>li.recruit>a{font-size:1.125em;display:block;}
+	#cw_news>div>ul>li.recruit>a>span{display:inline-block;float:none;margin-left:15px}
+	#cw_news>div>ul>li.recruit>div{display:block;width:150px;margin:15px auto 0}
+	#cw_news>div>ul>li.recruit>div>a{font-size:.875em;padding:10px;margin:0;width:100%;box-sizing:border-box;}
+	
+	#cs>div{padding:30px 20px}
+	#cs > div > .csImg a{width:200px;height:200px}
+	#cs > div >.csText{margin-top:20px}
+	#cs > div >.csText>p{padding-right:0}
+	#cs ul.csInfo{display:none}
+}
+@media screen and (max-width:640px) {
+	#newSlide ul li{width:49%;}
+	#newSlide dl dd{font-size:.875em;background-size:5%;background-position:0 8px;padding-left:15px;}
+	#newSlide>div{width:30px;height:30px;top:-47px}
+	#newSlide>div.prevNew a{background-position:-20px 0}
+	#newSlide>div.prevNew{right:27px}
+	#newSlide>div.nextNew{right:-2px}
+	#newSlide>div>a{width:20px;height:20px;margin:5px}
+	.bSlide03 .best09 .nongro_info img{display:inline-block;margin-top:5px;}
+	#cw_news > div > ul > li:nth-child(2){display:none}
+	#cw_news > div > ul > li:nth-child(3){display:none}
+	#sns div a{padding:21px 80px 20px 40px}
+	
+}
+@media screen and (max-width:600px) {
+	section, section#cw_news>div, section#link_cs{width:90%}
+	.bSlide03 .best09 .nongro_info div{font-size:.75em;letter-spacing:-1px;font-weight:normal}
+	#topBanner #slogan>div{grid-template-columns:1fr 110px}
+	#topBanner #slogan{font-size:2em}
+	#topBanner #slogan>div>span{padding:10px}
+	#topBanner #slogan>div>span.sloganLine{margin-top:45px}
+	#footer_wrap address{width:320px;margin:0 auto}
+}
+@media screen and (max-width:480px) {
+    header{height:55px;}
+	header h1{margin-top:10px}
+	header h1 img{width:90px}
+	#topBanner #topLogo{top:10px}
+	#topBanner #topLogo img{width:90px}
+	#shortGnb{width:73px}
+	#shortGnb>div{float:left}
+	#shortGnb>.eng{margin-right:10px}
+	#shortGnb>.gnbBtn{margin-top:0}
+	#shortGnb > .gnbBtn.on .line1{margin-top:9px}
+	#mobileGnb{margin-top:55px}
+	#mobileGnb ul.m_depth_1 > li > a{padding:10px 0}
+	#mobileGnb ul.m_depth_1 > li > span{margin-top:10px}
+	#mobileGnb ul.m_depth_1 ul{padding:10px 40px}
+	
+	.bSlide01 .best04{display:block}
+	.bSlide02 .best05{display:block}
+	.bSlide01{width:100%;display:grid;
+	grid-template-areas:
+	'best01 best02'
+	'best03 best04';
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
+	left:0;
+	}
+	.bSlide02{width:100%;display:grid;
+		grid-template-areas:
+		'best05 best06'
+		'best07 best08';
+		grid-column-gap: 8px;
+		grid-row-gap: 8px;
+		left:100%;
+	}
+	.bSlide02 .best05 div{position:static;margin:0;width:100%;height:100%;overflow:hidden;}
+	.bSlide02 .best05 div p{display:none}
+	.bSlide02 .best05 div a{position:static;height:32.5%;margin:15% auto 0;width:auto;padding:0 20px;width:85%;transform:scale(1);background-size:70%;background-position:center}
+	.bSlide02 .best05 div a.emart:hover{background-size:70%;background-position:center}
+	.bSlide02 .best05 div a.lottemart{position:static;margin:0 auto;margin-top:5%;background-size:80%;background-position:center;margin-bottom:15%}
+	.bSlide02 .best05 div a.lottemart:hover{position:static;margin:0 auto;margin-top:5%;background-size:80%;background-position:center}
+	.bSlide03 .best09 ul.nongro li{width:45%}
+	.bSlide03 .best09 ul.nongro li:last-child{width:45%}
+	.bSlide03 .best09 ul.nongro li.nongro_product2{top:45%;margin-left:-22.5%}
+	.bSlide03 .best09 .nongro_info div{display:none}
+	#newSlide dl dd{font-size:.75em}
+	#cw_news > div > ul > li > a{font-size:.875em}
+	#cw_news > div > ul > li.recruit > a{font-size:1em}
+	#cs > div > div{float:none;margin:0 auto;width:95%}
+	#sns div{font-size:2em}
+	#sns div a{text-align:left}
+	#sns div a span{transform:scale(.5);right:10px}
+	#cs > div > .csText p br:first-child{display:none}
+	#footer_wrap{width:95%}
+	#footer_wrap .footer_list{width:325px}
+	#footer_wrap .footer_list li{margin-right:10px}
+}
+@media screen and (max-width:400px) {
+	#newSlide dl dd{font-size:.65em}
+	.bSlide02 .best05{width:auto;height:auto!important}
+}
