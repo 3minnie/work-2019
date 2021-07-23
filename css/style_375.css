@@ -1,0 +1,95 @@
+@media screen and (max-width:375px) {
+	*{word-break:break-all}
+	#popup .popBox{width:100%;height:100%;margin:0}
+	#popup .popBox a{top:10px;right:10px;width:30px;height:30px;background-color:rgba(0,0,0,.3);border:1px solid #ffffff;background-position:3px 3px}	
+	#main #mainLayout{padding:14px 10px 100px}
+	#main #mainLayout #mainInfo span{font-size:12px}
+	#main #mainLayout > span{bottom:150px}
+	#main #mainLogo{transform:scale(.6);top:40px}
+	#main #mainLogo img{margin:-202.5px 0 0 -219.5px;display:none}
+	#main #mainLogo img:last-child{display:block}
+	#main #mainLayout #scrollInfo{display:none;}
+	#main #mainLayout #tabBtn{display:block;position:fixed;bottom:0;margin-left:-65px;left:50%;font-size:12px;transition:bottom .3s;z-index:10}
+	#main #mainLayout #tabBtn div a{display:block;width:60px;height:47px;padding:18px 5px;box-sizing:border-box;transition:color .3s}
+	#main #mainLayout #tabBtn .tabPrev{width:60px;height:47px;margin-right:10px;box-sizing:border-box;cursor:pointer}
+	#main #mainLayout #tabBtn .tabNext{width:60px;height:47px;box-sizing:border-box;padding:0 25px;cursor:pointer}
+	#main #mainLayout #mainInfo span{top:2px}
+	#main #mainLayout #mainInfo span.portfolio{left:100px}
+	#main #mainLayout #mainInfo span.year{right:50px}
+	#main #mainLayout .gnb_m_click {width:30px;height:30px;display:block;position:fixed;top:14px;right:10px;cursor:pointer;z-index:99997;}
+	#main #mainLayout .gnb_m_click a{width:30px;height:30px;display:block;cursor:pointer}
+	#main #mainLayout .gnb_m_click a span{width:30px;height:2px;display:block;margin-bottom:8px;float:right;background:#000000}
+	#main #mainLayout .gnb_m_click a span:nth-child(2){width:15px;}
+	#main #mainLayout .gnb_m_click a span:nth-child(3){margin-bottom:0}
+	#main #gnb_m{position:fixed;top:0;left:0;background:#ffffff;width:100%;height:100%;z-index:99998;padding:100px 0;box-sizing:border-box}
+	#main #gnb_m>li{margin-bottom:20px;font-family: 'Roboto';text-align:center;font-weight:bold;font-size:22px}
+	#main #gnb_m>li:first-child{margin-bottom:20px;font-size:14px}
+	#main #gnb_m>li.on>a{text-decoration:underline}
+	#main #gnb_m>li:hover>a{text-decoration:underline}
+	#main #gnb_m>li>ul{font-weight:normal;font-size:16px;padding-top:10px}
+	#main #gnb_m>li>ul>li{margin-bottom:5px;color:#72768d}
+	#main #gnb_m>li>ul>li.on>a{text-decoration:underline;color:#333}
+	#main #gnb_m>li>ul>li:hover>a{text-decoration:underline;color:#333}
+	#main #gnb_m>li.contact{position:absolute;bottom:auto;top:370px;left:50%;transform:translateX(-50%);}
+	#main #gnb_m>li.contact>ul>li{margin-bottom:3px;color:#333}
+	#main #gnb_m>li.contact>ul>li:first-child{margin-bottom:6px;color:#333}
+	#main #gnb_m>li.contact>a>div.point{width:20px;height:20px;margin:0 auto 30px;display:block;position:relative}
+	#main #gnb_m>li.contact>a>div.point>span{width:20px;height:4px;display:inline-block;background:#333;position:absolute;margin:8px 0 0 -10px}
+	#main #gnb_m>li.contact>a>div.point>span.line1{transform:rotate(0deg)}
+	#main #gnb_m>li.contact>a>div.point>span.line2{transform:rotate(45deg)}
+	#main #gnb_m>li.contact>a>div.point>span.line3{transform:rotate(90deg)}
+	#main #gnb_m>li.contact>a>div.point>span.line4{transform:rotate(135deg)}
+	#main .btnClose{width:30px;height:30px;position:fixed;top:30px;right:25px;z-index:99999}
+	#main .btnClose span{display:block;width:30px;height:1px;background:#000000;margin-top:10px}
+	#main .btnClose span:nth-child(1){transform:rotate(45deg);margin-top:15px}
+	#main .btnClose span:nth-child(2){transform:rotate(-45deg);margin-top:0}
+	
+	#header{width:100%;height:70px!important;background:#f7f8fd;display:block}
+	#header h1{padding:10px 10px 0 10px;width:91px;height:40px}
+	#header h1 a{width:91px;margin:0}
+	#header h1 img{width:91px;height:26px;}
+	#header ul{display:none;}
+	#header>#navbar{position:relative;margin:0 10px;overflow:hidden;height:20px;display:block}
+	#header>#navbar>h2{display:none;position:absolute;top:0;padding:0 10px;border-top:1px solid #000000;width:100%;box-sizing:border-box;transition:opacity .5s;}
+	#header>#navbar>h2.on{display:block;}
+	#header>#navbar>h2>span{display:inline-block;float:left;}
+	#header>#navbar>h2>span.divTit{margin-right:20px;font-weight:normal;font-size:12px}
+	#header>#navbar>h2>span.worksTit{float:right;font-size:12px;font-weight:normal}
+	
+	#section>div>div h2{font-size:16px}
+	#section>div{margin:0!important}
+	#section #cv #profile{padding-left:20px;padding-top:90px}
+	#section #cv #profile h2{margin-bottom:0}
+	#section #cv #etc{padding-left:20px;height:50%;margin-top:20px}
+	#section #cv #etc h2{margin-top:20px}
+	#section #cv #etc p.skills span.skillbar{width:230px}
+	#section > div > div.workInfo{padding-left:20px;height:53%}
+	#section .infoArea{padding:0 30px 0 0}
+	#section .infoArea h2{font-size:18px;padding-top:80px;display:inline-block;margin-bottom:10px}
+	#section .infoArea .info{font-size:12px;margin-bottom:10px}
+	#section .infoArea .check{font-size:12px;font-weight:normal}
+	#section div div.workShow{width:100%;height:47%;position:relative;float:none;top:0}
+	#section #works1 .workShow .innerImg{transform:scale(.4);margin:-212px 0 0 -318.5px}
+	#section div div.workShow>img{transform:scale(.48)}
+	#section #works1 .workShow img.mockup{transform:scale(.4);margin:-289px 0 0 -347.5px}
+	#section .adaptive .workShow img.mockup{margin:-240px 0 0 -347.5px}
+	#section .adaptive .workShow .innerImg1{margin:-180px 0 0 -252px;transform:scale(.482)}
+	#section .adaptive .workShow .innerImg2{margin:-105px 0 0 12px;transform:scale(.482)}
+	#section .adaptive .workShow .innerImg3{margin:-69px 0 0 -190px;transform:scale(.482)}
+	#section .btnArea{padding:0}
+	#section .btnArea .linkBtn{font-size:12px;width:130px;background-position:110px center;background-size:5%;margin-top:0;margin-right:10px}
+	#section .btnArea .linkBtn > a{padding:8px 10px 8px}
+	#section .btnArea .linkBtn:first-child{float:left}
+	#section .btnArea .linkBtn.adaptive{width:55px;height:36px;margin-right:5px}
+	#section .btnArea .linkBtn.adaptive>a{padding:9px 10px 9px}
+	#section>div#works4>div.workShow .workImage	{position:absolute;top:0}
+	#section>div#works4>div.workShow .workImage img{width:450px;margin:-130px 0 0 -225px}
+	#section>div#works4>div.workShow .bgCloud img{transform:scale(.7)}
+	#section>div#works4>div.workShow .bgCloud img.cloud1{top:5%}
+	#section>div#works4>div.workShow .bgCloud img.cloud2{top:35%}
+	#section>div#works4>div.workShow .bgCloud img.cloud3{top:25%}
+	#section>div#works4>div.workShow .bgCloud img.cloud4{top:0}
+	#section>div#works4>div.workShow .bgCloud img.cloud5{top:50%}
+	#section>div#works4>div.workShow .bgCloud img.cloud6{top:80%}
+	#section>div#works5>div.workShow .workImage img{width:130px;margin:-125px 0 0 -65px}
+}
