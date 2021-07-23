@@ -1,0 +1,39 @@
+@media screen and (min-width:769px) and (max-width:1680px){
+	#popup .popBox{width:1000px;height:706px;margin:31px auto}
+
+	#section .infoArea{padding:105px 30px 50px;}
+	#section .infoArea h2{font-size:24px;height:38px}
+	#section>div{min-width:1000px}
+	#section #cv #profile{width:250px}
+	#section #cv #profile p{width:170px}
+	#section #cv #profile p br{display:none}
+	#section #cv #profile img{width:170px}
+	#section #cv #etc {padding-left:30px}
+	#section #cv #recent {padding-left:100px;width:570px}
+	#section #cv #recent .year{padding-right:10px;left:55px}
+	#section #cv #recent .year li{height:19px;font-size:12px;padding-top:2px}
+	#section #cv .cv_bg{background-size:280px;bottom:auto;top:-120px;right:-100px}
+	#section div div.workShow{width:60%}
+	#section #works1 .workShow img.mockup{width:556px}
+	#section #works1 .workShow .innerImg{width:510px;height:288px}
+	#section #works1 .workShow img.mockup {top:55%}
+	#section #works1 .workShow .innerImg {top:55%;margin:-267px 0 0 -255px}
+	#section #works1 .workShow .innerImg img{width:510px}
+	#section .btnArea .linkBtn{font-size:16px;width:170px;background-position:140px center}
+	#section>div>div.workInfo{width:40%}
+	#section .btnArea{padding:0 30px}
+	#section .btnArea .linkBtn.adaptive{height:51px}
+	#section .adaptive .workShow img.mockup {width:556px}
+	#section #works1 .workShow img.mockup{margin:-289px 0 0 -278px}
+	#section .adaptive .workShow img.mockup{margin:-235px 0 0 -278px}
+	#section .adaptive .workShow .innerImg1{width:396px;height:223px;margin:-218px 0 0 -204px}
+	#section .adaptive .workShow .innerImg1 img{width:396px}
+	#section>div#works4>div.workShow .workImage img{width:600px;margin:-230px -300px}
+	
+	#section #ep .ep_wrap{padding:180px 0 0 50px;position:relative}
+	#section #ep p.ep1{width:451px;top:520px;left:135px}
+	#section #ep p.ep2{width:431px;top:250px;left:580px}
+	#section #ep .ep_bg1{background:url(../img/ep_1366_1.png) no-repeat;width:71px;height:151px;top:0;left:70px}
+	#section #ep .ep_bg2{background:url(../img/ep_1366_2.png) no-repeat;width:657px;height:385px;top:110px;left:100px}
+	#section #ep .ep_bg3{background:url(../img/ep_1366_3.png) no-repeat;width:165px;height:138px;top:550px;left:950px}
+}
