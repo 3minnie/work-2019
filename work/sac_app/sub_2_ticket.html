@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>티켓</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/sac.css" />
+	<link rel="stylesheet" href="css/themes/sac.min.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/style_index.css"/>
+	<link rel="stylesheet" href="css/style_sub.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/script_index.js"></script>
+	<script type="text/javascript" src="js/script_sub.js"></script>
+</head>
+<body>
+    <div data-role="page" id="wrap">
+		<div data-role="panel" id="gnb" data-display="overlay">
+			<div id="gnbTop" class="cf">
+				<div class="gnbHome fl">
+					<a href="index.html" data-ajax="false"><img src="img/icons/icon_home.png" width="27" alt="home"/></a>
+				</div>
+				<div class="gnbSetting">
+					<a href="#"><img src="img/icons/icon_bar.png" width="28" alt="barcode"/></a>
+					<a href="#"><img src="img/icons/icon_set.png" width="26" alt="setting"/></a>
+				</div>
+			</div><!-- gnbTop -->
+			<div id="gnbMy" class="cf">
+				<div class="myImg fl"></div>
+				<div class="myInfo fl">
+					<div class="myName">
+						<img src="img/icons/icon_membership.png" width="17" alt="membership"/>
+						<a href="#">
+							<strong>김세민</strong>님
+							<span class="link"></span>
+						</a>
+					</div>
+					<div class="myService cf">
+						<div class="myTicket fl">
+							<span class="icon"></span>티켓 예매 내역
+						</div>
+						<div class="myMembership fl">
+							<span class="icon"></span>멤버쉽
+						</div>
+					</div>
+				</div>
+			</div><!-- gnbMy -->
+			<div id="gnbMenu">
+				<ul>
+					<li><a href="sub_1_show.html" data-ajax="false">공연/전시</a></li>
+					<li><a href="sub_2_ticket.html" data-ajax="false">티켓</a></li>
+					<li><a href="sub_3_locate.html" data-ajax="false">이용안내</a></li>
+					<li><a href="sub_4_notice.html" data-ajax="false">공지사항</a></li>
+				</ul>
+			</div>
+			<div id="gnbSubmenu">
+				<ul>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">오시는길</a></li>
+					<li><a href="#">티켓오픈소식</a></li>
+				</ul>
+			</div>
+			<div id="gnbLogout">
+				<a href="#"><span></span>로그아웃</a>
+			</div>
+		</div><!-- gnb패널 -->
+        <div data-role="header" id="header">
+			<a href="#gnb" data-role="none"><img src="img/icons/icon_menu.png" width="24" alt="menu"/></a>
+			<a href="#" data-role="none"><img src="img/icons/icon_search.png" width="24" alt="search"/></a>
+            <h1>티켓</h1>
+        </div>
+        <div data-role="content" id="ticketContents">
+            <div class="menuBg"></div>
+			<div data-role="tabs">
+				<div data-role="none" class="tabArea1">
+					<ul>
+						<li class="on"><a href="#ticketTab1">싹딜 (SAC 딜)</a></li>
+						<li><a href="#ticketTab2">당일할인티켓</a></li>
+						<li><a href="#ticketTab3">티켓오픈소식</a></li>
+					</ul>
+				</div>
+				<div id="ticketTab1">
+					<div class="mainBanner">
+						<a href="#">
+							<p class="bannerTit">싹 (SAC) 딜</p>
+							<p>"관심있었던 공연/전시 싹쓸이 해볼까?"</p>
+						</a>
+					</div>
+					<div class="sacDeal wm">
+						<h2>오늘의 싹(SAC)딜 <span>2019.06.23</span></h2>
+						<p class="infoTit">다음 싹딜을 준비중입니다~!</p>
+						<p class="info">예술의전당에서는 회원 여러분에게 항상 기억에 남을 문화생활을 드리기 위해 엄선된 문화공연을 준비하고 있습니다.</p>
+					</div>
+					<div class="todayEnddeal wm">
+						<h2>오늘의 마감공연</h2>
+						<img src="img/contents/todayenddeal.png" width="162" alt="마감공연"/>
+						<div class="endInfo">
+							<p class="endTit">
+								레오폴트 모차르트 탄생 300주년 기념<br/> &lt;부전자전 모차르트 &gt;
+							</p>
+							<p class="endDate">2019.06.27 (목) 20:00</p>
+							<p class="endLoca">IBK챔버홀</p>
+							<p class="endPrice">
+								<span class="prevPrice">일반석 <strong>30,000원</strong></span>
+								<span class="salePrice">일반석 <strong>15,000원</strong></span>
+							</p>
+							<button class="endDealBtn">예매하기</button>
+						</div>
+					</div>
+					<div class="lastSacDeal wm">
+						<h2>지난 싹 (SAC) 딜</h2><span class="moreArrow"></span>
+						<ul>
+							<li>
+								<a href="#"><img src="img/contents/lastdeal1.png" width="162" alt="지난싹딜1"/></a>
+								<a href="#"><p class="lastTit">김세준 박진형 듀오 리사이틀</p></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/contents/lastdeal2.png" width="162" alt="지난싹딜2"/></a>
+								<a href="#"><p class="lastTit">박종성 &lt;HARMONICIST&gt;</p></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/contents/lastdeal3.png" width="162" alt="지난싹딜3"/></a>
+								<a href="#"><p class="lastTit">국립현대무용단 안무공모 프로젝트 스텝업</p></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/contents/lastdeal4.png" width="162" alt="지난싹딜4"/></a>
+								<a href="#"><p class="lastTit">이은결 &lt;THE ILLUSION&gt;</p></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/contents/lastdeal5.png" width="162" alt="지난싹딜5"/></a>
+								<a href="#"><p class="lastTit">서울모테트합창단 창단 30주년 기념 마스터피스 시리즈 IV 바흐의 세속 칸타타</p></a>
+							</li>
+							<li>
+								<a href="#"><img src="img/contents/lastdeal6.png" width="162" alt="지난싹딜6"/></a>
+								<a href="#"><p class="lastTit">코리안심포니오케스트라 213회 정기연주회</p></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="ticketTab2">
+					<div class="mainBanner2">
+						<p class="bannerTit">당일 할인 티켓</p>
+						<p>문화누리카드 소지자, 만7세~만24세, 70세 이상을 <br/>대상으로 공연당일 한정된 좌석에 <br/><특별할인가> 판매하는 예술의전당 공익사업입니다.</p>
+						<a href="#">자세히 알아보기</a>
+					</div>
+					<div class="ticketSale wm">
+						<h2>당일 할인 티켓</h2>
+						<div class="saleTicket">
+							<img src="img/contents/saleTicket1.png" width="162" alt="당일할인티켓1"/>
+							<div class="saleInfo">
+								<p class="saleTit">
+									[발레축제]클라우드 나인, 김용걸댄스씨어터 
+								</p>
+								<p class="saleDate">2019.06.24(월) 20:00</p>
+								<p class="saleLoca">자유소극장</p>
+								<button class="saleTicketBtn">예매하기</button>
+							</div>
+						</div>
+						<div class="saleTicket">
+							<img src="img/contents/saleTicket2.png" width="162" alt="당일할인티켓2"/>
+							<div class="saleInfo">
+								<p class="saleTit">
+									[발레축제] 와이즈발레단, 보스톤발레단, 광주시립발레단 
+								</p>
+								<p class="saleDate">2019.06.24(월) 20:00</p>
+								<p class="saleLoca">CJ 토월극장</p>
+								<button class="saleTicketBtn">예매하기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="ticketTab3" class="wm">
+					<h2>티켓 오픈 소식</h2>
+					<div class="openTicket">
+						<img src="img/contents/ticket1.jpg" width="162" alt="오픈소식1"/>
+						<div class="openInfo">
+							<p class="openTit">곤지암 우드윈드 페스티벌 2019</p>
+							<p class="openDate">2019.08.11(일) 오후 8시</p>
+							<div class="opening">
+								<p class="member1"><span>일반회원</span><span>6월 19일(수) 오후 4시</span></p>
+								<p class="member2"><span>유료회원</span><span>6월 18일(화) 오후 4시</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="openTicket">
+						<img src="img/contents/ticket2.jpg" width="162" alt="오픈소식2"/>
+						<div class="openInfo">
+							<p class="openTit">2019 청소년을 위한 클래식 사용법 콘서트</p>
+							<p class="openDate"> 2019.08.24(토) 오후 5시</p>
+							<div class="opening">
+								<p class="member1"><span>일반회원</span><span>6월 19일(수) 오후 3시</span></p>
+								<p class="member2"><span>유료회원</span><span>6월 18일(화) 오후 3시</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="openTicket">
+						<img src="img/contents/ticket3.jpg" width="162" alt="오픈소식3"/>
+						<div class="openInfo">
+							<p class="openTit">서울센트럴남성합창단 제9회 정기연주회</p>
+							<p class="openDate">2019.08.27(화) 오후 8시</p>
+							<div class="opening">
+								<p class="member1"><span>일반회원</span><span>6월 21일(금) 오후 2시</span></p>
+								<p class="member2"><span>유료회원</span><span>6월 18일(화) 오후 2시</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="openTicket">
+						<img src="img/contents/ticket4.jpg" width="162" alt="오픈소식4"/>
+						<div class="openInfo">
+							<p class="openTit">오케스트라 앙상블 서울 OES의 베토벤 시리즈 III (2018-2020)</p>
+							<p class="openDate">2019.08.30(금) 오후 8시</p>
+							<div class="opening">
+								<p class="member1"><span>일반회원</span><span>6월 19일(수) 오전 11시</span></p>
+								<p class="member2"><span>유료회원</span><span>6월 18일(화) 오전 11시</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="openTicket">
+						<img src="img/contents/ticket5.jpg" width="162" alt="오픈소식5"/>
+						<div class="openInfo">
+							<p class="openTit">2019 빈 필하모닉 오케스트라 내한공연</p>
+							<p class="openDate">2019.11.01(금) 오후 8시</p>
+							<div class="opening">
+								<p class="member1"><span>일반회원</span><span>6월 18일(화) 오전 10시</span></p>
+								<p class="member2"><span>유료회원</span><span>6월 14일(금) 오전 10시</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="openTicket">
+						<img src="img/contents/ticket6.jpg" width="162" alt="오픈소식6"/>
+						<div class="openInfo">
+							<p class="openTit">2019 예술의전당 토월가족오페라 푸치니의 <br/>&lt;투란도트&gt;</p>
+							<p class="openDate">2019.08.08(목) ~ 2019.08.18(일)</p>
+							<div class="opening">
+								<p class="member1"><span>일반회원</span><span>6월 19일(수) 오후 4시</span></p>
+								<p class="member2"><span>유료회원</span><span>6월 18일(화) 오후 4시</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div data-role="none" id="footer">
+			<img src="img/logo_footer.png" alt="logo footer"/>
+		</div>
+    </div>
+</body>
+</html>
