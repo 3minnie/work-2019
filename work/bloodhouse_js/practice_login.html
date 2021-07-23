@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>로그인</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet"> 
+</head>
+<body>
+	<div id="contents">
+		<h1>로그인</h1>
+		<form id="loginForm" action="#" method="post">
+			<fieldset>
+				<legend>로그인</legend>
+				<div id="loginInfo">
+					<p class="loginImg">
+						<img src="images/login_box_img01.png" alt="login" title="loginmage"/>
+					</p>
+					<div id="loginTxt">
+						<p class="loginEng">LOGIN</p>
+						<p class="loginKor">회원일 경우 로그인해주세요</p>
+					</div>
+				</div>
+				<div id="login">
+					<input type="text" id="userID" name="userID"/>
+					<input type="password" id="userPWD" name="userPWD"/>
+					<input type="checkbox" name="saveId" id="saveId" value="아이디 저장" />
+					<label for="saveId">아이디저장</label>						
+				</div>
+				<div id="loginBtn">
+					<input type="submit" value="로그인" id="btnLogin"/>
+				</div>
+			</fieldset>
+			<div id="security">
+				<p>보안 <span>2</span>단계</p>
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#" class="activeA">2</a></li>
+					<li><a href="#">3</a></li>
+				</ul>
+			</div>
+			<div id="info">
+				<div id="join1">
+					<p>아직 혈액관리본부 회원이 아니신가요?</p>
+					<a href="#" class="btnJoin1">회원가입</a>
+				</div>
+				<div id="join2">
+					<p>아이디/비밀번호를 분실하셨거나 회원가입 여부를 알고 싶으세요?</p>
+					<a href="#" class="btnJoin2">아이디/비밀번호찾기</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
