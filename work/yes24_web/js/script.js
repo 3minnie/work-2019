@@ -221,7 +221,8 @@ $(function(){
 	
 	
 	//chyes, yesblog click
-	$('#ch_yes').height($('#yesblog').height());
+	var $yesheight=$('#yesblog').height();
+	$('#ch_yes').height($yesheight);
 	$('#ch_yes ul.btn li,#yesblog ul.btn li').click(function(){
 		var cbIndex=$(this).index();
 		var article=$(this).parents('article');
