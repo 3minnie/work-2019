@@ -13,6 +13,7 @@ img{border:0;font-size:0;vertical-align:top}
 
 
 #wrap{padding-bottom:98px;position:relative;box-sizing:border-box;overflow:hidden}
+#gnb{position:absolute;left:0;display:none;z-index:9999}
 #gnbTop{padding-bottom:15px;border-bottom:1px solid #e80023}
 #gnbTop div a{display:inline-block;width:24px;height:24px;text-align:center;vertical-align:middle}
 #gnbTop .gnbSetting{float:right;width:70px}
@@ -45,6 +46,11 @@ img{border:0;font-size:0;vertical-align:top}
 
 #header{border-top:0!important}
 #header a{display:block;width:50px;height:32px;text-align:center;padding-top:12px}
+#header a:nth-child(1){float:left}
+#header a:nth-child(2){float:right}
+#header h1{text-align:center}
+#header h1 img{vertical-align:middle}
+
 .ui-btn-left, .ui-btn-right{top:0}
 .ui-header .ui-title{padding:10px 0!important}
 .ui-footer{position:absolute;bottom:0;width:100%;border:none}
