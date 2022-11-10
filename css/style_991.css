@@ -1,4 +1,4 @@
-@media screen and (max-width:768px) {
+@media screen and (max-width:991px) {
 	#popup .popBox{width:600px;height:865px;margin:60px auto}
 	#popup .popBox a{width:25px;height:25px;background-size:25px;right:-28px}
 	#header{width:150px;height:100%;grid-template-rows:70px 1fr;min-height:auto;transition:height .3s}
