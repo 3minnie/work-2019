@@ -164,7 +164,7 @@ $(function(){
 	//menu click
 	var gnb=$('#gnb');
 	$('#header>a:eq(0), .ui-panel-dismiss').tap(function(){
-		if(gnb.hasClass('ui-panel-closed')){
+		if(gnb.addClass('ui-panel-closed')){
 			$('.ui-content .menuBg').fadeIn(300);
 		} else {
 			$('.ui-content .menuBg').fadeOut(300);
