@@ -1,7 +1,7 @@
 $(function(){ 
 	$("html, body").animate({ scrollTop: 0 },500);
 	$('#main, #main #mainLogo, #main #mainLayout, #section>div').css('height',$(window).innerHeight())
-	if($(window).width()>768){
+	if($(window).width()>991){
 		$('#section').css('width',$(window).width()-300)
 	};
 	var n=0;
@@ -26,7 +26,7 @@ $(function(){
 			$('#header').height(h);
 			$('#section>div').height(h);
 		};
-		if($(window).width()>768){
+		if($(window).width()>991){
 			$('#section').css('width',$(window).width()-300)
 		};
 	});
@@ -38,7 +38,7 @@ $(function(){
 		var moveTop=-e.pageY/20+20
 		var moveLeft=-e.pageX/20+20
 		var mainLogo=$('#main #mainLogo');
-		if($(window).width()>768){
+		if($(window).width()>991){
 			logoMove('.logo1');
 			function logoMove(logoClass){
 				$(logoClass,mainLogo).css({'transform':'translate3d('+moveLeft+'px,'+moveTop+'px,0px)','marginLeft':-215});
@@ -161,7 +161,7 @@ $(function(){
 		if(scroll>=height){
 			$('#header').css({'position':'fixed'});
 			$('#wrap').css({'position':'static'});
-				if($(window).width()<=768){
+				if($(window).width()<=991){
 					if(scroll>height*1.7 && scroll<height*6.7){
 						$('#header').height('55%');
 					}else{
@@ -373,9 +373,9 @@ $(function(){
 		$('#works1 .workShow .innerImg img').eq(currentImg1).fadeIn(500);		
 	},3000);
 	
-	//768
+	//991
 	var wWidth=$(window).width();
-	if(wWidth<=768 && wWidth>375){
+	if(wWidth<=991 && wWidth>375){
 		$('#section>#works1').append($('<div class="slide"></div>'));
 		$('#section>#cv').append($('.cv_bg'));
 		var slideDiv=$('.slide');
@@ -406,7 +406,7 @@ $(function(){
 		cloud5=clouds.eq(4),
 		cloud6=clouds.eq(5);
 	
-	if($(window).width()>768){
+	if($(window).width()>991){
 		cloudy(cloud1,50000,2000);
 		cloudy(cloud2,30000,2000);
 		cloudy(cloud3,100000,2000);
@@ -467,9 +467,9 @@ $(function(){
 		window.open(work,"work","width=1920,height=966,location=no,status=no,toolbar=no");
 		return false;
 	});
-	linkBtn.filter('.view768').click(function(){
+	linkBtn.filter('.view991').click(function(){
 		var work=$('a', this).attr('href');
-		window.open(work,"work","width=768,height=1024,location=no,status=no,toolbar=no");
+		window.open(work,"work","width=991,height=1024,location=no,status=no,toolbar=no");
 		return false;
 	});
 	linkBtn.filter('.view375').click(function(){
